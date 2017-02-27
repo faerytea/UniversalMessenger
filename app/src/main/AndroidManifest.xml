@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="ru.ifmo.rain.maevsky.unicomm">
 
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -11,9 +12,25 @@
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+
+        <service
+                android:name=".service.CommManager"
+                android:enabled="true"
+                android:exported="true">
+        </service>
+
+        <activity android:name=".activities.PluginsStackCreation">
+        </activity>
+        <activity android:name=".activities.Select">
+        </activity>
+        <activity android:name=".activities.Chats">
+        </activity>
+        <activity android:name=".activities.ChatActivity">
+        </activity>
+        <activity android:name=".activities.SettingsActivity">
         </activity>
     </application>
 

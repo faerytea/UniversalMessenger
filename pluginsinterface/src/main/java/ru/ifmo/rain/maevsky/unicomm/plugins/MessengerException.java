@@ -10,4 +10,15 @@ package ru.ifmo.rain.maevsky.unicomm.plugins;
  * something useful for users.
  */
 public class MessengerException extends PluginException {
+    public MessengerException(String detailMessage) {
+        super(detailMessage);
+    }
+
+    public MessengerException(String detailMessage, Throwable throwable) {
+        super(detailMessage, throwable);
+    }
+
+    public MessengerException(Throwable throwable) {
+        super(throwable);
+    }
 }

@@ -10,4 +10,15 @@ package ru.ifmo.rain.maevsky.unicomm.plugins;
  * {@code PluginException} in your plugins.
  */
 public class PluginException extends Exception {
+    public PluginException(String detailMessage) {
+        super(detailMessage);
+    }
+
+    public PluginException(String detailMessage, Throwable throwable) {
+        super(detailMessage, throwable);
+    }
+
+    public PluginException(Throwable throwable) {
+        super(throwable);
+    }
 }

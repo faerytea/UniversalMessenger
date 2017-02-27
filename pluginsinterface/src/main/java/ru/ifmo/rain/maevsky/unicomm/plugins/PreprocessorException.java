@@ -10,4 +10,15 @@ package ru.ifmo.rain.maevsky.unicomm.plugins;
  * something useful for users.
  */
 public class PreprocessorException extends PluginException {
+    public PreprocessorException(String detailMessage) {
+        super(detailMessage);
+    }
+
+    public PreprocessorException(String detailMessage, Throwable throwable) {
+        super(detailMessage, throwable);
+    }
+
+    public PreprocessorException(Throwable throwable) {
+        super(throwable);
+    }
 }
